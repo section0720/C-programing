@@ -14,13 +14,9 @@ int main(void)
 
 int convert(int a)
 {
-	if (a == 1 || a == 0)
-	{
-		printf("%d" , a);
-	}
-	else 
+	if (a > 1)
 	{
 		convert(a / 2);
-		printf("%d", a % 2);
 	}
+	printf("%d" , a % 2);
 }
