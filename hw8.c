@@ -14,8 +14,8 @@ double Sigma(double *param)
 		param[j] -= avg;
 	
 	for (int k = 0; k < 5; k++)
-		dev += param[k];
-	var = pow(dev, 2) / 5;
+		dev += pow(param[k], 2);
+	var = dev / 5;
 	
 	printf("Standard Deviation = %.4lf", sqrt(var));
 	return 0;
